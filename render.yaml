@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: file-upload-service
+    env: node
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: CLOUDINARY_NAME
+        value: your_cloud_name
+      - key: CLOUDINARY_KEY
+        value: your_api_key
+      - key: CLOUDINARY_SECRET
+        value: your_api_secret
